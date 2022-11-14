@@ -12,17 +12,17 @@
 // application / App
 startApp();
 function startApp() {
-    output(calculator(getNumber1(),getNumber2(),getOp()));
+    output(calculator(getNumber("first"),getNumber("second"),getOp()));
 }
 
-function getNumber1(params) {
-    return 2;
+function getNumber(figure) {
+    let inputString = prompt("Please give your " + figure + " number:")
+    let num = parseInt(inputString);
+    return num;
 }
-function getNumber2(params) {
-    return 2;
-}
-function getOp(params) {
-    return "+";
+function getOp() {
+    let op = prompt("Are you a smooth operator?")
+    return op;
 }
 
 //module: calculator | tests:

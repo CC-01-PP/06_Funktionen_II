@@ -10,7 +10,7 @@
 
 
 // application / App
-startApp();
+// startApp();
 function startApp() {
     output(calculator(getNumber("first"),getNumber("second"),getOp()));
 }
@@ -20,9 +20,29 @@ function getNumber(figure) {
     let num = parseInt(inputString);
     return num;
 }
+
+output(getOp());
+
 function getOp() {
-    let op = prompt("Are you a smooth operator?")
-    return op;
+    let op = prompt("Are you a smooth operator?");
+    if (isOpValid(op)) {
+        return "Operator is smooth!";
+    } else {
+        return "Operator is not smooth.";
+    }
+}
+
+function isOpValid(op) {
+    switch (op) {
+        case "+":
+        case "-":
+        case "*":
+        case ":":
+        case "/":
+            return true;
+        default:
+            return false;
+    }
 }
 
 //module: calculator | tests:

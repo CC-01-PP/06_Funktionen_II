@@ -8,6 +8,16 @@
 4. Ausgabe in Konsole : check!!
 */
 
+
+//module: subtraction a - b | test:
+output(subtract(2,3));
+output(subtract(6,3));
+output(subtract(2,2));
+
+function subtract(a,b) {
+    return a - b;
+}
+
 //module: addition a + b | test:
 // output(add(2,3));
 // output(add(2,-3));

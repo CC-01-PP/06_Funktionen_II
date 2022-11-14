@@ -8,6 +8,23 @@
 4. Ausgabe in Konsole : check!!
 */
 
+
+// application / App
+startApp();
+function startApp() {
+    output(calculator(getNumber1(),getNumber2(),getOp()));
+}
+
+function getNumber1(params) {
+    return 2;
+}
+function getNumber2(params) {
+    return 2;
+}
+function getOp(params) {
+    return "+";
+}
+
 //module: calculator | tests:
 //Agreement : "+", "-", "*", ":"
 // output(calculator(2,2,"+"));
@@ -83,8 +100,8 @@ function add(a,b) {
 
 
 //module: console output | test
-output("hello");
-output(2);
+// output("hello");
+// output(2);
 function output(outputData) {
     // console.log(typeof outputData)
     if (typeof outputData == "number") {

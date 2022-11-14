@@ -33,17 +33,9 @@ function getOp() {
 }
 
 function isOpValid(op) {
-    switch (op) {
-        case "+":
-        case "-":
-        case "*":
-        case ":":
-        case "/":
-            return true;
-        default:
-            return false;
-    }
+    return op == "+" || op == "-" || op == "*" || op == ":" || op == "/";
 }
+
 
 //module: calculator | tests:
 //Agreement : "+", "-", "*", ":"
